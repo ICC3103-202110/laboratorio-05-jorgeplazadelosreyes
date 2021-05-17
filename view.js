@@ -36,10 +36,18 @@ function view(i1,i2){
     }
 }
 
-module.exports = {
-    view
+function input1(){
+    const msg = "Bill amount?"
+    return msg
 }
-const {title,table} = view(100,15)
-console.clear()
-console.log(title) 
-printTable(table)
+
+function input2(){
+    const msg = "Tip(%)"
+    return msg
+}
+
+module.exports = {
+    view,
+    input1,
+    input2
+}
